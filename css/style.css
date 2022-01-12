@@ -10,7 +10,7 @@ header {
   padding: 2vw;
   border: peru;
   border-width: 1vw;
-  border-style: outset;
+  border-style: inset;
   border-color: rgb(122, 71, 3);
 }
 
@@ -25,6 +25,7 @@ body {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 2vw;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #mainpara {
@@ -32,6 +33,7 @@ body {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 2vw;
+  font: message-box;
 }
 
 footer {
@@ -41,6 +43,13 @@ footer {
   margin-bottom: 1vw;
   text-align: center;
   padding: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vw;
+  border: coral;
+  border-width: 1vw;
+  border-style: outset;
+  border-color: rgb(192, 99, 66);
 }
 
 ul {
