@@ -1,7 +1,7 @@
 'use strict';
 
 // console.log('Hello Goodbye');
-
+/*
 let user = prompt('Hi! What is your name?');
 
 alert(`Welcome ${user}`);
@@ -59,3 +59,26 @@ if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
 }
 
 alert(`Thanks for playing ${user}! See ya next time!`);
+*/
+let clueGuesses = 4;
+let myNumber = 10;
+//let foundNumber = false;
+//let userNumber = prompt('What number am I thinking of?');
+
+while(clueGuesses !== 0){
+  let userNumber = prompt('What number am I thinking of?');
+  //clueGuesses--;
+  if(userNumber == myNumber){
+    alert('Congrats! You guessed the number!');
+    break;
+  } else if (userNumber < myNumber){
+    alert('Your number is to low. Please try again.');
+    clueGuesses--;
+  } else if(userNumber > myNumber){
+    alert('Your number is to high. Please try again.');
+    clueGuesses--;
+  } if(clueGuesses === 0){
+    alert('The number I was thinking is 10.');
+    break;
+  }
+}
