@@ -76,18 +76,21 @@ function answerFour(){
 answerFour();
 
 //5th Q
-let fiveAnswer = prompt('Are you staring at a monitor?').toLowerCase();
+function answerFive(){
+  let fiveAnswer = prompt('Are you staring at a monitor?').toLowerCase();
 
-if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
-  // console.log('Yup, learning things!');
-  alert('Yup, learning things!');
-  counter++;
-} else if(fiveAnswer === 'no' || fiveAnswer === 'n') {
-  // console.log('How else do I do this great stuff?');
-  alert('How else do I do this great stuff?');
-} else {
-  alert('Please respond with a yes or no');
+  if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
+    // console.log('Yup, learning things!');
+    alert('Yup, learning things!');
+    counter++;
+  } else if(fiveAnswer === 'no' || fiveAnswer === 'n') {
+    // console.log('How else do I do this great stuff?');
+    alert('How else do I do this great stuff?');
+  } else {
+    alert('Please respond with a yes or no');
+  }
 }
+answerFive();
 
 alert(`Thanks for playing ${user}! I am a Code Fellow that does not like sweets. I live in a part in California that is not Snowing. This quarantine sometimes makes me feel like I'm in groundhogs day! But that's ok, because I get to learn cool things by interacting through my monitor!`);
 
