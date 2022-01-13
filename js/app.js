@@ -92,39 +92,39 @@ function answerFive(){
 }
 answerFive();
 
-alert(`Thanks for playing ${user}! I am a Code Fellow that does not like sweets. I live in a part in California that is not Snowing. This quarantine sometimes makes me feel like I'm in groundhogs day! But that's ok, because I get to learn cool things by interacting through my monitor!`);
-
-
-
-let myNumber = 10;
-let clueGuesses = 4;
-
-//let foundNumber = false;
-//let userNumber = prompt('What number am I thinking of?');
-
-while(clueGuesses !== 0){
-  let userNumber = prompt('What number am I thinking of?');
-  if(parseInt(userNumber) === myNumber){
-    // console.log('Congrats! You guessed the number!');
-    alert('Congrats! You guessed the number!');
-    counter++;
-    break;
-  } else if (userNumber < myNumber){
-    // console.log('Your number is to low. Please try again.');
-    alert('Your number is to low. Please try again.');
-    clueGuesses--;
-  } else if(userNumber > myNumber){
-    // console.log('Your number is to high. Please try again.');
-    alert('Your number is to high. Please try again.');
-    clueGuesses--;
-  } if(clueGuesses === 0){
-    alert('Sorry, but the number I was thinking is 10.');
-    break;
+//6th Q
+function guessesClue(){
+  let myNumber = 10;
+  let clueGuesses = 4;
+  
+  //let foundNumber = false;
+  //let userNumber = prompt('What number am I thinking of?');
+  
+  while(clueGuesses !== 0){
+    let userNumber = prompt('What number am I thinking of?');
+    if(parseInt(userNumber) === myNumber){
+      // console.log('Congrats! You guessed the number!');
+      alert('Congrats! You guessed the number!');
+      counter++;
+      break;
+    } else if (userNumber < myNumber){
+      // console.log('Your number is to low. Please try again.');
+      alert('Your number is to low. Please try again.');
+      clueGuesses--;
+    } else if(userNumber > myNumber){
+      // console.log('Your number is to high. Please try again.');
+      alert('Your number is to high. Please try again.');
+      clueGuesses--;
+    } if(clueGuesses === 0){
+      alert('Sorry, but the number I was thinking is 10.');
+      break;
+    }
   }
 }
+guessesClue();
 
 
-
+//7th Q
 let lastMovie = ['Moana', 'Cabin in the Woods', 'Encanto', 'Dont look up'];
 let movieGuesses = 6;
 let rightAnswer = false;
@@ -166,7 +166,7 @@ if(rightAnswer === false){
   alert(`Correct answers were: ${lastMovie[0]}, ${lastMovie[1]}, ${lastMovie[2]}, ${lastMovie[3]}.`);
 }
 
-
+alert(`Thanks for playing ${user}! I am a Code Fellow that does not like sweets. I live in a part in California that is not Snowing. This quarantine sometimes makes me feel like I'm in groundhogs day! But that's ok, because I get to learn cool things by interacting through my monitor!`);
 
 alert(`Thanks ${user}! You have answered ${counter} questions correctly.`);
 
