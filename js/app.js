@@ -7,18 +7,21 @@ let user = prompt('Hi! What is your name?');
 
 alert(`Welcome ${user}, please answer the following questions with a yes/y or no/n answer`);
 
-let oneAnswer = prompt('Am I a Code Fellow?').toLowerCase();
+function answerOne(){
+  let oneAnswer = prompt('Am I a Code Fellow?').toLowerCase();
 
-if(oneAnswer === 'yes' || oneAnswer === 'y') {
-  // console.log('Yes I am!');
-  alert('Yes I am!');
-  counter++;
-} else if(oneAnswer === 'no' || oneAnswer === 'n') {
-  // console.log('Try again');
-  alert('Try again');
-} else {
-  alert('Please respond with a yes or no');
+  if(oneAnswer === 'yes' || oneAnswer === 'y') {
+    // console.log('Yes I am!');
+    alert('Yes I am!');
+    counter++;
+  } else if(oneAnswer === 'no' || oneAnswer === 'n') {
+    // console.log('Try again');
+    alert('Try again');
+  } else {
+    alert('Please respond with a yes or no');
+  }
 }
+answerOne();
 
 let twoAnswer = prompt('Do I like sweets?').toLowerCase();
 
