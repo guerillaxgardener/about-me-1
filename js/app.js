@@ -64,10 +64,9 @@ let clueGuesses = 4;
 let myNumber = 10;
 //let foundNumber = false;
 //let userNumber = prompt('What number am I thinking of?');
-
+/*
 while(clueGuesses !== 0){
   let userNumber = prompt('What number am I thinking of?');
-  //clueGuesses--;
   if(userNumber == myNumber){
     alert('Congrats! You guessed the number!');
     break;
@@ -81,4 +80,28 @@ while(clueGuesses !== 0){
     alert('The number I was thinking is 10.');
     break;
   }
+}
+*/
+
+let lastMovie = ['Moana', 'Cabin in the Woods', 'Encanto', 'Dont look up'];
+let movieGuesses = 6;
+let rightAnswer = false;
+
+for(let j = 0; j < movieGuesses; j++){
+  let userMovie = prompt('What\'s the last movie I watched?');
+  for(let i = 0; i < lastMovie.length; i++){
+    if(userMovie == lastMovie[i]){
+      rightAnswer = true;
+      break;
+    }
+  }
+  if (rightAnswer){
+    console.log(`You guessed right! ${userMovie} was one of the last movies I have watched in 3 months!`);
+    break;
+  } else {
+    console.log('Nope, haven\'t seen it.');
+  }
+}
+if(rightAnswer == false){
+  console.log(`Correct answers were: ${lastMovie[0]}, ${lastMovie[1]}, ${lastMovie[2]}, ${lastMovie[3]}.`);
 }
