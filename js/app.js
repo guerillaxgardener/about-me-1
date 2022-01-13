@@ -74,14 +74,17 @@ if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
 
 alert(`Thanks for playing ${user}! I am a Code Fellow that does not like sweets. I live in a part in California that is not Snowing. This quarantine sometimes makes me feel like I'm in groundhogs day! But that's ok, because I get to learn cool things by interacting through my monitor!`);
 
-let clueGuesses = 4;
+
+
 let myNumber = 10;
+let clueGuesses = 4;
+
 //let foundNumber = false;
 //let userNumber = prompt('What number am I thinking of?');
 
 while(clueGuesses !== 0){
   let userNumber = prompt('What number am I thinking of?');
-  if(userNumber == myNumber){
+  if(parseInt(userNumber) === myNumber){
     // console.log('Congrats! You guessed the number!');
     alert('Congrats! You guessed the number!');
     counter++;
@@ -95,15 +98,32 @@ while(clueGuesses !== 0){
     alert('Your number is to high. Please try again.');
     clueGuesses--;
   } if(clueGuesses === 0){
-    alert('The number I was thinking is 10.');
+    alert('Sorry, but the number I was thinking is 10.');
     break;
   }
 }
 
 
+
 let lastMovie = ['Moana', 'Cabin in the Woods', 'Encanto', 'Dont look up'];
 let movieGuesses = 6;
 let rightAnswer = false;
+/*
+while(movieGuesses){
+  let userMovie = prompt('What\'s the last movie I watched?').toLowerCase();
+
+  for(let i = 0; i < lastMovie.length; i++){
+    if (userMovie === lastMovie[i]){
+      alert(`You guessed right! ${userMovie} was one of the last movies I have watched in 3 months!`);
+      rightAnswer = true;
+      break;
+    }
+  }
+
+  movieGuesses--;
+
+}
+*/
 
 for(let j = 0; j < movieGuesses; j++){
   let userMovie = prompt('What\'s the last movie I watched?').toLowerCase();
@@ -126,4 +146,8 @@ if(rightAnswer === false){
   alert(`Correct answers were: ${lastMovie[0]}, ${lastMovie[1]}, ${lastMovie[2]}, ${lastMovie[3]}.`);
 }
 
-alert(`Thanks ${user}! You have answered ${counter} correctly.`);
+
+
+alert(`Thanks ${user}! You have answered ${counter} questions correctly.`);
+
+
