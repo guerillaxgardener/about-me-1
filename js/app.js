@@ -7,6 +7,7 @@ let user = prompt('Hi! What is your name?');
 
 alert(`Welcome ${user}, please answer the following questions with a yes/y or no/n answer`);
 
+//1st Q
 function answerOne(){
   let oneAnswer = prompt('Am I a Code Fellow?').toLowerCase();
 
@@ -23,6 +24,7 @@ function answerOne(){
 }
 answerOne();
 
+//2nd Q
 function answerTwo(){
   let twoAnswer = prompt('Do I like sweets?').toLowerCase();
 
@@ -39,32 +41,41 @@ function answerTwo(){
 }
 answerTwo();
 
-let thirdAnswer = prompt('Is it snowing?').toLowerCase();
+//3rd Q
+function answerThird(){
+  let thirdAnswer = prompt('Is it snowing?').toLowerCase();
 
-if(thirdAnswer === 'yes' || thirdAnswer === 'y') {
-  // console.log('Not from where I can see.');
-  alert('Not from where I can see.');
-} else if(thirdAnswer === 'no' || thirdAnswer === 'n') {
-  // console.log('That is correct. No snow out my window.');
-  alert('That is correct. No snow out my window.');
-  counter++;
-} else {
-  alert('Please respond with a yes or no');
+  if(thirdAnswer === 'yes' || thirdAnswer === 'y') {
+    // console.log('Not from where I can see.');
+    alert('Not from where I can see.');
+  } else if(thirdAnswer === 'no' || thirdAnswer === 'n') {
+    // console.log('That is correct. No snow out my window.');
+    alert('That is correct. No snow out my window.');
+    counter++;
+  } else {
+    alert('Please respond with a yes or no');
+  }
 }
+answerThird();
 
-let fourAnswer = prompt('Do you feel like your in Groundhogs Day?').toLowerCase();
+//4th Q
+function answerFour(){
+  let fourAnswer = prompt('Do you feel like your in Groundhogs Day?').toLowerCase();
 
-if(fourAnswer === 'yes' || fourAnswer === 'y') {
-  // console.log('Yea, but thats ok');
-  alert('Yea, but thats ok');
-  counter++;
-} else if(fourAnswer === 'no' || fourAnswer === 'n') {
-  // console.log('You sure?');
-  alert('You sure?');
-} else {
-  alert('Please respond with a yes or no');
+  if(fourAnswer === 'yes' || fourAnswer === 'y') {
+    // console.log('Yea, but thats ok');
+    alert('Yea, but thats ok');
+    counter++;
+  } else if(fourAnswer === 'no' || fourAnswer === 'n') {
+    // console.log('You sure?');
+    alert('You sure?');
+  } else {
+    alert('Please respond with a yes or no');
+  }
 }
+answerFour();
 
+//5th Q
 let fiveAnswer = prompt('Are you staring at a monitor?').toLowerCase();
 
 if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
