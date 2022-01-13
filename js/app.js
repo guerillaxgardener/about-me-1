@@ -23,18 +23,21 @@ function answerOne(){
 }
 answerOne();
 
-let twoAnswer = prompt('Do I like sweets?').toLowerCase();
+function answerTwo(){
+  let twoAnswer = prompt('Do I like sweets?').toLowerCase();
 
-if(twoAnswer === 'yes' || twoAnswer === 'y') {
-  // console.log('Wierd, but, try again.');
-  alert('Wierd, but, try again.');
-} else if(twoAnswer === 'no' || twoAnswer === 'n') {
-  // console.log('That is correct. I do not like sweets as much as the other guy.');
-  alert('That is correct. I do not like sweets as much as the other guy.');
-  counter++;
-} else {
-  alert('Please respond with a yes or no');
+  if(twoAnswer === 'yes' || twoAnswer === 'y') {
+    // console.log('Wierd, but, try again.');
+    alert('Wierd, but, try again.');
+  } else if(twoAnswer === 'no' || twoAnswer === 'n') {
+    // console.log('That is correct. I do not like sweets as much as the other guy.');
+    alert('That is correct. I do not like sweets as much as the other guy.');
+    counter++;
+  } else {
+    alert('Please respond with a yes or no');
+  }
 }
+answerTwo();
 
 let thirdAnswer = prompt('Is it snowing?').toLowerCase();
 
