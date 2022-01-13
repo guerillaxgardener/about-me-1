@@ -1,10 +1,11 @@
 'use strict';
 
 // console.log('Hello Goodbye');
-/*
-let user = prompt('Hi! What is your name?');
 
-alert(`Welcome ${user}`);
+let user = prompt('Hi! What is your name?');
+let counter = 0;
+
+alert(`Welcome ${user}, please answer the following questions with a yes/y or no/n answer`);
 
 let oneAnswer = prompt('Is this a Code Fellow?').toLowerCase();
 
@@ -58,13 +59,13 @@ if(fiveAnswer === 'yes' || fiveAnswer === 'y') {
   alert('Probably time to get some glasses.');
 }
 
-alert(`Thanks for playing ${user}! See ya next time!`);
-*/
+alert(`Thanks for playing ${user}! I am a Code Fellow that does not like sweets. I live in a part in California that is not Snowing. This quarantine sometimes makes me feel like I'm in groundhogs day! But that's ok, because I get to learn cool things by interacting through my monitor!`);
+
 let clueGuesses = 4;
 let myNumber = 10;
 //let foundNumber = false;
 //let userNumber = prompt('What number am I thinking of?');
-/*
+
 while(clueGuesses !== 0){
   let userNumber = prompt('What number am I thinking of?');
   if(userNumber == myNumber){
@@ -81,14 +82,14 @@ while(clueGuesses !== 0){
     break;
   }
 }
-*/
+
 
 let lastMovie = ['Moana', 'Cabin in the Woods', 'Encanto', 'Dont look up'];
 let movieGuesses = 6;
 let rightAnswer = false;
 
 for(let j = 0; j < movieGuesses; j++){
-  let userMovie = prompt('What\'s the last movie I watched?');
+  let userMovie = prompt('What\'s the last movie I watched?').toLowerCase();
   for(let i = 0; i < lastMovie.length; i++){
     if(userMovie == lastMovie[i]){
       rightAnswer = true;
@@ -97,11 +98,15 @@ for(let j = 0; j < movieGuesses; j++){
   }
   if (rightAnswer){
     console.log(`You guessed right! ${userMovie} was one of the last movies I have watched in 3 months!`);
+    alert(`You guessed right! ${userMovie} was one of the last movies I have watched in 3 months!`);
+    counter++
     break;
   } else {
-    console.log('Nope, haven\'t seen it.');
+    alert('Nope, haven\'t seen it.');
   }
 }
 if(rightAnswer == false){
-  console.log(`Correct answers were: ${lastMovie[0]}, ${lastMovie[1]}, ${lastMovie[2]}, ${lastMovie[3]}.`);
+  alert(`Correct answers were: ${lastMovie[0]}, ${lastMovie[1]}, ${lastMovie[2]}, ${lastMovie[3]}.`);
 }
+
+alert(`Thanks ${user}! You have answered ${counter} correctly.`);
